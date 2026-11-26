@@ -1,0 +1,40 @@
+/* ==========================================================================
+   EasyFoods LP v2 · Legal pages + 404
+   ========================================================================== */
+.legal-hero { padding-block: clamp(3.5rem, 2rem + 6vw, 7rem) clamp(2rem, 1rem + 3vw, 3.5rem); background: radial-gradient(50% 80% at 50% 0%, rgba(255, 110, 0, 0.16), transparent 70%); }
+.legal-hero .eyebrow { margin-bottom: var(--sp-6); }
+.legal-hero__meta { margin-top: var(--sp-4); font-family: var(--font-mono); font-size: var(--fs-sm); color: var(--c-muted); }
+
+.legal { display: grid; gap: var(--sp-8); padding-bottom: var(--section-y); }
+@media (min-width: 1024px) { .legal { grid-template-columns: 260px minmax(0, 1fr); gap: var(--sp-16); } }
+
+.legal__toc { align-self: start; padding: 20px; border-radius: var(--r-md); border: 1px solid var(--c-line); background: var(--c-surface); }
+@media (min-width: 1024px) { .legal__toc { position: sticky; top: calc(var(--header-h) + 24px); } }
+.legal__toc-title { font-family: var(--font-mono); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-faint); margin-bottom: 12px; }
+.legal__toc ol { list-style: none; padding: 0; display: grid; gap: 2px; }
+.legal__toc a { display: block; padding: 6px 10px; border-radius: 8px; font-size: var(--fs-sm); color: var(--c-muted); border-left: 2px solid transparent; transition: all 0.25s var(--ease-out); }
+.legal__toc a:hover { color: var(--c-text); }
+.legal__toc a.is-active { color: var(--c-orange-soft); border-left-color: var(--c-orange); background: var(--c-orange-a10); }
+
+.legal__body { max-width: 68ch; color: var(--c-text-2); }
+.legal__body h2 { position: relative; margin: var(--sp-12) 0 var(--sp-4); font-size: var(--fs-xl); scroll-margin-top: calc(var(--header-h) + 24px); }
+.legal__body p + p, .legal__body p + ul, .legal__body ul + p { margin-top: var(--sp-4); }
+.legal__body ul { padding-left: 1.2em; display: grid; gap: 6px; margin-top: var(--sp-3); }
+.legal__body a { color: var(--c-orange); text-decoration: underline; text-underline-offset: 3px; }
+.legal__intro { font-size: var(--fs-md); color: var(--c-text); }
+.legal__copy { margin-left: 10px; vertical-align: middle; display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; color: var(--c-muted); opacity: 0; transition: opacity 0.2s, color 0.2s, background-color 0.2s; }
+.legal__body h2:hover .legal__copy, .legal__copy:focus-visible { opacity: 1; }
+.legal__copy:hover { color: var(--c-orange); background: var(--c-orange-a10); }
+.legal__copy svg { width: 16px; height: 16px; }
+
+/* ---------- 404 ---------- */
+.nf { position: relative; min-height: calc(100svh - var(--header-h)); display: flex; align-items: center; padding-block: var(--sp-16); overflow: hidden; isolation: isolate; }
+.nf__glow { position: absolute; inset: 0; z-index: -1; background: radial-gradient(45% 60% at 75% 50%, rgba(255, 110, 0, 0.22), transparent 70%); }
+.nf__grid { display: grid; gap: var(--sp-12); align-items: center; }
+@media (min-width: 960px) { .nf__grid { grid-template-columns: 1.2fr 0.8fr; } }
+.nf__copy .eyebrow { margin-bottom: var(--sp-6); }
+.nf__copy .lead { margin: var(--sp-6) 0 var(--sp-8); }
+.nf__links { list-style: none; padding: 0; margin-top: var(--sp-8); display: flex; flex-wrap: wrap; gap: var(--sp-6); }
+.nf__ticket { display: flex; justify-content: center; }
+.nf__ticket .lead-ticket { width: 100%; transform: rotate(3deg); }
+.nf__stamp { border-color: #dc2626; color: #dc2626; font-size: 1rem; }

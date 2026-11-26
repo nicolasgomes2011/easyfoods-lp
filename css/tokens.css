@@ -1,0 +1,126 @@
+/* ==========================================================================
+   EasyFoods LP v2 · Design tokens
+   Single source of truth for color, type, spacing, radius, motion and layers.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* ---- Surfaces (warm near-black, never pure grey) ---- */
+  --c-bg: #0a0908;
+  --c-bg-2: #100e0c;
+  --c-surface: #151311;
+  --c-surface-2: #1c1916;
+  --c-surface-3: #25211d;
+  --c-line: rgba(255, 244, 230, 0.08);
+  --c-line-2: rgba(255, 244, 230, 0.14);
+  --c-line-3: rgba(255, 244, 230, 0.22);
+
+  /* ---- Text (contrast on --c-bg: text 17.6:1, text-2 11.2:1, muted 7.1:1) ---- */
+  --c-text: #f8f4ef;
+  --c-text-2: #d6cfc7;
+  --c-muted: #a69d94;
+  --c-faint: #6e665e; /* decorative only, never body copy */
+
+  /* ---- Brand (sampled from the logo) ---- */
+  --c-orange: #ff8a00;
+  --c-orange-hot: #ff5e00;
+  --c-orange-soft: #ffb347;
+  --c-orange-pale: #ffd9a8;
+  --c-orange-ink: #1c0d00;          /* text on orange surfaces (contrast 9.4:1) */
+  --c-orange-a10: rgba(255, 138, 0, 0.10);
+  --c-orange-a20: rgba(255, 138, 0, 0.20);
+  --c-orange-a35: rgba(255, 138, 0, 0.35);
+
+  /* ---- Product status colors (same family the EasyFoods panel uses) ---- */
+  --c-amber: #f59e0b;   /* Aguardando confirmação */
+  --c-blue: #3b82f6;    /* Confirmado */
+  --c-violet: #8b5cf6;  /* Em preparo (alt) */
+  --c-green: #22c55e;   /* Pronto / Entregue */
+  --c-cyan: #06b6d4;    /* Saiu para entrega */
+  --c-red: #ef4444;     /* Cancelado / atraso */
+
+  /* ---- Gradients ---- */
+  --g-ember: linear-gradient(135deg, #ffb347 0%, #ff8a00 45%, #ff5e00 100%);
+  --g-ember-soft: linear-gradient(135deg, rgba(255, 179, 71, 0.18), rgba(255, 94, 0, 0.06));
+  --g-text: linear-gradient(100deg, #ffd9a8 0%, #ffb347 22%, #ff8a00 55%, #ff5e00 100%);
+  --g-line: linear-gradient(90deg, transparent, rgba(255, 138, 0, 0.55), transparent);
+  --g-surface: linear-gradient(180deg, rgba(255, 244, 230, 0.045), rgba(255, 244, 230, 0.01));
+
+  /* ---- Typography ---- */
+  --font-display: "Bricolage Grotesque", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --fs-2xs: 0.6875rem;                                   /* 11px */
+  --fs-xs: 0.75rem;                                      /* 12px */
+  --fs-sm: 0.875rem;                                     /* 14px */
+  --fs-base: 1rem;                                       /* 16px */
+  --fs-md: 1.125rem;                                     /* 18px */
+  --fs-lg: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);     /* 20 → 24 */
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);       /* 24 → 36 */
+  --fs-2xl: clamp(2rem, 1.35rem + 2.9vw, 3.5rem);        /* 32 → 56 */
+  --fs-3xl: clamp(2.5rem, 1.4rem + 4.8vw, 5rem);         /* 40 → 80 */
+  --fs-hero: clamp(2.75rem, 1.2rem + 6.6vw, 6.75rem);    /* 44 → 108 */
+
+  --lh-tight: 1.02;
+  --lh-snug: 1.15;
+  --lh-body: 1.6;
+  --tracking-tight: -0.022em;
+  --tracking-display: -0.032em;
+  --tracking-wide: 0.14em;
+
+  /* ---- Spacing (4px base) ---- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --section-y: clamp(4.5rem, 2.8rem + 7vw, 9.5rem);
+
+  /* ---- Layout ---- */
+  --max: 1240px;
+  --max-narrow: 860px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --header-h: 72px;
+
+  /* ---- Radius ---- */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --sh-1: 0 1px 0 rgba(255, 244, 230, 0.05) inset, 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --sh-2: 0 1px 0 rgba(255, 244, 230, 0.06) inset, 0 30px 60px -20px rgba(0, 0, 0, 0.75);
+  --sh-device: 0 0 0 1px rgba(255, 244, 230, 0.07), 0 40px 80px -30px rgba(0, 0, 0, 0.9), 0 18px 40px -24px rgba(255, 94, 0, 0.25);
+  --sh-glow: 0 0 0 1px rgba(255, 138, 0, 0.35), 0 12px 44px -10px rgba(255, 110, 0, 0.6);
+  --sh-glow-strong: 0 0 0 1px rgba(255, 170, 80, 0.55), 0 18px 60px -8px rgba(255, 110, 0, 0.8);
+
+  /* ---- Motion (mirrored as GSAP CustomEase names in js/core.js) ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);        /* ef-out */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);    /* ef-in-out */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* ef-spring */
+  --dur-1: 160ms;
+  --dur-2: 280ms;
+  --dur-3: 480ms;
+  --dur-4: 800ms;
+
+  /* ---- Layers ---- */
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dock: 80;
+  --z-header: 100;
+  --z-menu: 120;
+  --z-curtain: 180;
+  --z-toast: 200;
+}

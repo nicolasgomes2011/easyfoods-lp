@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nicolasgomes2011.github.io/easyfoods-lp/sitemap.xml

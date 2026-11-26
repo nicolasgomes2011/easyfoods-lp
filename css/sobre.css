@@ -1,0 +1,63 @@
+/* ==========================================================================
+   EasyFoods LP v2 · Sobre nós
+   ========================================================================== */
+@import url("recursos.css");
+
+.shero { position: relative; padding-block: clamp(4rem, 2.5rem + 7vw, 9rem) clamp(2rem, 1rem + 4vw, 5rem); overflow: hidden; isolation: isolate; }
+.shero__glow {
+  -webkit-mask: linear-gradient(180deg, #000 60%, transparent);
+  mask: linear-gradient(180deg, #000 60%, transparent);
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(50% 70% at 85% 10%, rgba(255, 110, 0, 0.25), transparent 70%),
+    radial-gradient(40% 50% at 0% 100%, rgba(255, 170, 60, 0.08), transparent 70%);
+}
+.shero .eyebrow { margin-bottom: var(--sp-6); }
+.shero__title { font-size: var(--fs-hero); max-width: 12ch; }
+.shero__lead { margin-top: var(--sp-6); max-width: 40em; }
+
+/* Manifesto: words light up as the pointer passes (one-shot reveal too) */
+.manifesto__text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 1.1rem + 2.2vw, 3rem);
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  color: var(--c-text);
+  text-wrap: balance;
+}
+html.js.motion-ok .manifesto__text .word { color: rgba(248, 244, 239, 0.18); transition: color 0.6s var(--ease-out); }
+html.js.motion-ok .manifesto__text .word.is-lit { color: var(--c-text); }
+html.js.motion-ok .manifesto__text .word.is-hot { color: var(--c-orange-soft); }
+
+.why__grid { display: grid; gap: var(--sp-8); }
+@media (min-width: 960px) { .why__grid { grid-template-columns: 0.9fr 1.1fr; } }
+.why__grid h2 { margin-top: var(--sp-5); }
+.why__copy { display: grid; gap: var(--sp-5); font-size: var(--fs-md); color: var(--c-text-2); }
+
+.pr-list { display: grid; gap: var(--sp-3); }
+.pr {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: var(--sp-6);
+  row-gap: 6px;
+  width: 100%;
+  text-align: left;
+  padding: 24px 26px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.pr:hover, .pr[aria-expanded="true"] { border-color: var(--c-orange-a35); }
+.pr__n { grid-row: span 3; color: var(--c-orange); font-size: var(--fs-sm); padding-top: 6px; }
+.pr__title { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-xl); letter-spacing: -0.03em; line-height: 1.1; }
+.pr__quote { color: var(--c-orange-soft); font-family: var(--font-mono); font-size: var(--fs-sm); }
+.pr__detail { color: var(--c-text-2); max-width: 46em; overflow: hidden; }
+html.js .pr[aria-expanded="false"] .pr__detail { height: 0; opacity: 0; }
+
+.how-we__list { list-style: none; padding: 0; display: grid; gap: var(--sp-4); }
+@media (min-width: 720px) { .how-we__list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .how-we__list { grid-template-columns: repeat(4, 1fr); } }
+.how-we__list li { padding: 26px; border-radius: var(--r-lg); border: 1px solid var(--c-line); background: var(--c-surface); }
+.how-we__list .mono { color: var(--c-orange); font-size: var(--fs-sm); }
+.how-we__list h3 { margin: var(--sp-6) 0 8px; font-size: var(--fs-md); }
+.how-we__list p { color: var(--c-muted); font-size: var(--fs-sm); }
