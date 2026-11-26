@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EasyFoods | Seu pedido, do seu jeito.</title>
+  <meta name="description" content="EasyFoods: plataforma de operação e pedidos para restaurantes. Pedidos, cozinha, mesas e entregas em um único sistema.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="EasyFoods, ir para o início">
+        <img src="img/logo.png" alt="EasyFoods" class="brand-logo">
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato" class="btn btn-small">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Plataforma de operação e pedidos para restaurantes</p>
+          <h1>Seu pedido, <span class="accent">do seu jeito.</span></h1>
+          <p class="lead">
+            Pedidos, cozinha, mesas e entregas num só sistema. Do momento em que o cliente pede
+            até a entrega, todo mundo enxerga o mesmo status, em tempo real.
+          </p>
+          <div class="actions">
+            <a href="#contato" class="btn btn-primary">Quero conhecer</a>
+            <a href="#recursos" class="btn btn-ghost">Ver o que tem dentro</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="img/logo.png" alt="Logo EasyFoods" class="hero-logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Problema / solução ===== -->
+    <section class="strip">
+      <div class="container strip-inner">
+        <p><strong>Hoje:</strong> pedido num app, cozinha num caderno, mesa num papel, entrega por telefone.</p>
+        <p><strong>Com EasyFoods:</strong> um painel só, com a mesma informação para restaurante, cozinha, cliente e entregador.</p>
+      </div>
+    </section>
+
+    <!-- ===== Recursos ===== -->
+    <section id="recursos" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Recursos</p>
+          <h2>Tudo que o EasyFoods tem</h2>
+          <p class="muted">Cada tela foi pensada para quem vai usá-la: rápida para o balcão, grande para a cozinha, simples para o entregador.</p>
+        </header>
+
+        <div class="cards">
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Catálogo</h3>
+            <ul>
+              <li>Produtos com busca e filtros</li>
+              <li>Categorias com ordenação</li>
+              <li>Variantes (P, M, G) e adicionais</li>
+              <li>Upload e redimensionamento de imagem</li>
+              <li>Arquivar ou pausar produto sem perder histórico</li>
+              <li>Disponibilidade manual por item</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Pedidos</h3>
+            <ul>
+              <li>Lista com filtros por status, tipo e data</li>
+              <li>Visão de pedidos em andamento e histórico</li>
+              <li>Confirmar, recusar ou cancelar com motivo</li>
+              <li>Marcar pedido como concluído</li>
+              <li>Histórico de status que não se apaga</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Cozinha</h3>
+            <ul>
+              <li>Fila de pedidos com contadores por status</li>
+              <li>Marcar pedido como em preparo</li>
+              <li>Marcar pedido como pronto</li>
+              <li>Atualização automática da fila a cada 30 segundos</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Mesas e fila de espera</h3>
+            <ul>
+              <li>Cadastro de mesas com status (livre, ocupada, reservada)</li>
+              <li>Mesa ocupa sozinha quando recebe pedido</li>
+              <li>Sessão da mesa aberta no primeiro pedido</li>
+              <li>Fila de espera por ordem de chegada</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Entregas</h3>
+            <ul>
+              <li>Painel do entregador pelo celular</li>
+              <li>Ações de retirada e entrega com um toque</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Equipe e acesso</h3>
+            <ul>
+              <li>Perfis: admin, gerente, atendente, cozinha e entregador</li>
+              <li>Cada pessoa vê só o que o seu perfil precisa</li>
+              <li>Login com verificação de e-mail</li>
+              <li>Autenticação em dois fatores (2FA)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <span class="badge ok">Disponível</span>
+            <h3>Painel e clientes</h3>
+            <ul>
+              <li>Indicadores: pedidos abertos, em preparo, prontos e faturamento do dia</li>
+              <li>Pedidos recentes e fila da cozinha no mesmo lugar</li>
+              <li>Alertas de pedidos atrasados</li>
+              <li>Lista de clientes com total gasto e último pedido</li>
+            </ul>
+          </article>
+
+          <article class="card card-soon">
+            <span class="badge soon">Em breve</span>
+            <h3>Vitrine e pedido pelo cliente</h3>
+            <ul>
+              <li>Cardápio online do restaurante</li>
+              <li>Carrinho e checkout sem precisar de conta</li>
+              <li>Pedido por mesa via QR code</li>
+              <li>Acompanhamento do pedido em tempo real</li>
+            </ul>
+          </article>
+
+          <article class="card card-soon">
+            <span class="badge soon">Em breve</span>
+            <h3>Previsão de tempo (ETA)</h3>
+            <ul>
+              <li>Tempo de preparo calculado pelo histórico real</li>
+              <li>Estimativa de entrega que se ajusta durante o pedido</li>
+            </ul>
+          </article>
+
+          <article class="card card-soon">
+            <span class="badge soon">Em breve</span>
+            <h3>Divisão de conta e relatórios</h3>
+            <ul>
+              <li>Conta por mesa com divisão por pessoa ou por item</li>
+              <li>Relatórios de vendas, produtos mais pedidos e horários de pico</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Como funciona ===== -->
+    <section id="como-funciona" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Pedir. Preparar. Aproveitar.</h2>
+        </header>
+
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>O cliente pede</h3>
+            <p>O pedido entra no sistema na hora, com itens, adicionais e tipo de atendimento (mesa, entrega ou retirada).</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>A cozinha prepara</h3>
+            <p>A fila aparece para a cozinha. Cada etapa, de confirmado a pronto, fica registrada e visível para a equipe.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Tudo chega certo</h3>
+            <p>O entregador recebe a sua parte pelo celular. A mesa e o pedido são fechados sem papel e sem telefone.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Sobre nós ===== -->
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">Sobre nós</p>
+          <h2>Feito para quem está na correria</h2>
+          <p>
+            O EasyFoods nasceu para simplificar a operação de restaurantes. Sabemos que quem
+            trabalha com comida está sempre sob pressão: o balcão lotado, a cozinha no limite,
+            o entregador esperando.
+          </p>
+          <p>
+            Por isso construímos um sistema que prioriza o que importa no dia a dia: ações rápidas,
+            informação clara e um único lugar onde todo mundo acompanha o mesmo pedido.
+          </p>
+        </div>
+        <ul class="values">
+          <li><strong>Previsão honesta.</strong> Tempos reais, não otimistas.</li>
+          <li><strong>Rápido para quem mais trabalha.</strong> Um ou dois toques por ação.</li>
+          <li><strong>Simples para o cliente.</strong> Sem cadastro obrigatório, poucos passos.</li>
+          <li><strong>Nada escondido.</strong> Cada mudança de status aparece para quem precisa ver.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section id="contato" class="section section-alt">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos colocar seu restaurante no EasyFoods?</h2>
+          <p class="muted">Conte um pouco sobre o seu negócio. Respondemos para agendar uma conversa rápida e mostrar o sistema.</p>
+          <ul class="contact-info">
+            <li><span>E-mail</span> <a href="mailto:contato@easyfoods.example">contato@easyfoods.example</a></li>
+            <li><span>WhatsApp</span> <a href="#">(00) 00000-0000</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="form-contato" novalidate>
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="restaurante">Nome do restaurante</label>
+            <input id="restaurante" name="restaurante" type="text" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input id="telefone" name="telefone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="img/logo.png" alt="EasyFoods" class="footer-logo">
+      <p>Seu pedido, do seu jeito.</p>
+      <p class="muted small">&copy; <span id="ano"></span> EasyFoods. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
