@@ -140,11 +140,10 @@ strong, b { font-weight: 700; color: var(--c-text); }
 }
 .skip-link:focus { top: 12px; }
 
-.hide-mobile { display: none !important; }
-@media (min-width: 900px) {
-  .hide-mobile { display: initial !important; }
-  .hide-desktop { display: none !important; }
-}
+/* Only ever hide: never force a display value, or components lose their own
+   layout (e.g. .btn is inline-flex). */
+@media (max-width: 899.98px) { .hide-mobile { display: none !important; } }
+@media (min-width: 900px) { .hide-desktop { display: none !important; } }
 
 /* ---------- Cross-document View Transitions (progressive) ---------- */
 @view-transition { navigation: auto; }

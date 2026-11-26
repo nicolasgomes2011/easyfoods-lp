@@ -318,3 +318,7 @@ html.js .dock:not(.is-visible) { transform: translateY(140%); opacity: 0; pointe
   transform: scaleY(0);
   transform-origin: bottom;
 }
+
+/* WhatsApp shortcut in the header: brand-green icon */
+.site-header__actions .btn--ghost svg { color: #25d366; }
+.site-header__actions .btn--ghost:hover { border-color: rgba(37, 211, 102, 0.55); background: rgba(37, 211, 102, 0.08); }
