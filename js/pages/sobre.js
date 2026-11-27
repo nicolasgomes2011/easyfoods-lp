@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Sobre: manifesto word-light, expandable principles
+   Tá na Mão LP v2 · Sobre: manifesto word-light, expandable principles
    ========================================================================== */
 (function () {
   'use strict';

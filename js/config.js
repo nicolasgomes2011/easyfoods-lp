@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Site configuration
+   Tá na Mão LP v2 · Site configuration
    Edit ONLY this file to change contact data and the lead form destination.
    Every [data-whatsapp] / [data-email] link on every page reads from here.
    ========================================================================== */
@@ -11,7 +11,7 @@ window.EF_CONFIG = {
   whatsapp: '5551993810808',
 
   // Default message pre-filled when someone taps a WhatsApp button.
-  whatsappMessage: 'Olá! Vim pelo site e quero agendar uma demonstração do EasyFoods.',
+  whatsappMessage: 'Olá! Vim pelo site e quero agendar uma demonstração do Tá na Mão.',
 
   // TODO: lead form endpoint (Formspree, Make, n8n, your own API...). It receives a
   // JSON POST with { nome, restaurante, email, telefone, operacao, mensagem, origem, enviadoEm }.

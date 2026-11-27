@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Components
+   Tá na Mão LP v2 · Components
    Buttons · eyebrow · chips · section heads · cards · spotlight · bento ·
    tabs · FAQ · forms · toasts · marquee · device frames · product UI kit
    ========================================================================== */
@@ -602,7 +602,7 @@ select.field__control { appearance: none; background-image: url("data:image/svg+
 }
 .device--tablet .device__screen { border-radius: 16px; overflow: hidden; background: #0d0c0b; }
 
-/* ---------- Product UI kit (faithful to the EasyFoods panel) ---------- */
+/* ---------- Product UI kit (faithful to the Tá na Mão panel) ---------- */
 .ui {
   font-family: var(--font-body);
   font-size: 12px;

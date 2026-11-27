@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Recursos: Flip-animated filters + search, roles matrix,
+   Tá na Mão LP v2 · Recursos: Flip-animated filters + search, roles matrix,
    orbit hero.
    ========================================================================== */
 (function () {

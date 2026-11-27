@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Home page interactions
+   Tá na Mão LP v2 · Home page interactions
    Hero composition, before/after board (GSAP Flip), bento live tiles.
    ========================================================================== */
 (function () {
@@ -129,7 +129,7 @@
       opts.forEach(function (o) { o.setAttribute('aria-checked', String(o.getAttribute('data-chaos-mode') === mode)); });
       board.classList.toggle('is-before', mode === 'before');
       board.classList.toggle('is-after', mode === 'after');
-      if (live) live.textContent = mode === 'after' ? 'Mostrando a operação com EasyFoods.' : 'Mostrando a operação de hoje, sem sistema.';
+      if (live) live.textContent = mode === 'after' ? 'Mostrando a operação com o Tá na Mão.' : 'Mostrando a operação de hoje, sem sistema.';
       if (state) {
         window.Flip.from(state, {
           duration: 0.9, ease: 'ef-out', stagger: 0.05, absolute: false, nested: true,
