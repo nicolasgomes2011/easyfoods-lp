@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Contato: live receipt preview that mirrors the form.
+   Tá na Mão LP v2 · Contato: live receipt preview that mirrors the form.
    Validation, masking, sending and the success ticket live in core.js.
    ========================================================================== */
 (function () {

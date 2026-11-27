@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Legal pages (TOC + active section + copy link) and 404
+   Tá na Mão LP v2 · Legal pages (TOC + active section + copy link) and 404
    ========================================================================== */
 (function () {
   'use strict';

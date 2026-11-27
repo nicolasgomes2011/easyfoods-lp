@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Ember field (hero background)
+   Tá na Mão LP v2 · Ember field (hero background)
    Raw WebGL fragment shader: domain-warped fbm "heat" in brand colors with a
    pointer-reactive glow. Renders at reduced resolution, pauses off-screen and
    when the tab is hidden. Reduced motion → one static frame.
@@ -51,7 +51,7 @@
     gl.shaderSource(s, src);
     gl.compileShader(s);
     if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
-      console.warn('[EasyFoods] ember shader:', gl.getShaderInfoLog(s));
+      console.warn('[Tá na Mão] ember shader:', gl.getShaderInfoLog(s));
       return null;
     }
     return s;

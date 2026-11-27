@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Core runtime
+   Tá na Mão LP v2 · Core runtime
    Classic deferred script (no ES modules) so the site also works when opened
    straight from disk (file://). Load order on every page:
      gsap.min.js → GSAP plugins → js/config.js → js/core.js → feature/page scripts
@@ -51,7 +51,7 @@
   EF.$$ = $$;
 
   function safe(label, fn) {
-    try { fn(); } catch (err) { console.error('[EasyFoods] ' + label + ' failed:', err); }
+    try { fn(); } catch (err) { console.error('[Tá na Mão] ' + label + ' failed:', err); }
   }
 
   /* ---------------------------------------------------------------------
@@ -636,7 +636,7 @@
     return (
       '<div class="lead-success">' +
         '<div class="lead-ticket" data-ticket>' +
-          '<div class="lead-ticket__head"><strong>EasyFoods</strong><span>Comanda #' + code + ' · ' + hh + '</span></div>' +
+          '<div class="lead-ticket__head"><strong>Tá na Mão</strong><span>Comanda #' + code + ' · ' + hh + '</span></div>' +
           '<div class="lead-ticket__row"><span>Cliente</span><span>' + esc(data.nome) + '</span></div>' +
           '<div class="lead-ticket__row"><span>Restaurante</span><span>' + esc(data.restaurante) + '</span></div>' +
           '<div class="lead-ticket__row"><span>Pedido</span><span>1x Demonstração</span></div>' +
@@ -700,8 +700,8 @@
         data.enviadoEm = new Date().toISOString();
 
         if (!CONFIG.formEndpoint) {
-          console.warn('[EasyFoods] EF_CONFIG.formEndpoint está vazio: abrindo o WhatsApp com a mensagem pronta.');
-          var text = 'Olá! Quero agendar uma demonstração do EasyFoods.\n\n' +
+          console.warn('[Tá na Mão] EF_CONFIG.formEndpoint está vazio: abrindo o WhatsApp com a mensagem pronta.');
+          var text = 'Olá! Quero agendar uma demonstração do Tá na Mão.\n\n' +
             'Nome: ' + (data.nome || '') + '\n' +
             'Restaurante: ' + (data.restaurante || '') + '\n' +
             (data.operacao ? 'Operação: ' + data.operacao + '\n' : '') +
@@ -718,7 +718,7 @@
             wa.href = EF.whatsappURL(text); wa.target = '_blank'; wa.rel = 'noopener'; wa.className = 'link';
             wa.textContent = 'Abrir WhatsApp';
             var mail = doc.createElement('a');
-            mail.href = 'mailto:' + (CONFIG.email || '') + '?subject=' + encodeURIComponent('Demonstração EasyFoods') + '&body=' + encodeURIComponent(text);
+            mail.href = 'mailto:' + (CONFIG.email || '') + '?subject=' + encodeURIComponent('Demonstração Tá na Mão') + '&body=' + encodeURIComponent(text);
             mail.className = 'link'; mail.textContent = 'enviar por e-mail';
             status.appendChild(msg); status.appendChild(wa); status.appendChild(doc.createTextNode(' ou ')); status.appendChild(mail);
           }
@@ -739,7 +739,7 @@
           showSuccess(form, data);
         }).catch(function (err) {
           clearTimeout(to);
-          console.error('[EasyFoods] lead form error:', err);
+          console.error('[Tá na Mão] lead form error:', err);
           submit && submit.removeAttribute('data-state');
           if (status) {
             status.classList.add('is-error');

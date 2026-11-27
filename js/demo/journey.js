@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · "A jornada do pedido #01042"
+   Tá na Mão LP v2 · "A jornada do pedido #01042"
    Interactive, synchronized simulation of one order crossing the restaurant:
    Cliente (phone) → Balcão (browser) → Cozinha (tablet) → Entregador (phone).
    The visitor drives it by clicking the glowing action button; it also
@@ -146,7 +146,7 @@
   function frame(s) {
     var inner = '<div class="jr-screen__body" data-jr-body="' + s.id + '"></div>';
     if (s.id === 'balcao') {
-      return '<div class="device device--browser jr-dev"><div class="device__bar"><span class="device__dots"><i></i><i></i><i></i></span><span class="device__url">painel.easyfoods / pedidos</span></div>' + inner + '</div>';
+      return '<div class="device device--browser jr-dev"><div class="device__bar"><span class="device__dots"><i></i><i></i><i></i></span><span class="device__url">painel.tanamao / pedidos</span></div>' + inner + '</div>';
     }
     if (s.id === 'cozinha') return '<div class="device device--tablet jr-dev"><div class="device__screen">' + inner + '</div></div>';
     return '<div class="device device--phone jr-dev"><div class="device__screen"><div class="device__notch"></div>' + inner + '</div></div>';

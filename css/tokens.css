@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EasyFoods LP v2 · Design tokens
+   Tá na Mão LP v2 · Design tokens
    Single source of truth for color, type, spacing, radius, motion and layers.
    ========================================================================== */
 
@@ -32,7 +32,7 @@
   --c-orange-a20: rgba(255, 138, 0, 0.20);
   --c-orange-a35: rgba(255, 138, 0, 0.35);
 
-  /* ---- Product status colors (same family the EasyFoods panel uses) ---- */
+  /* ---- Product status colors (same family the Tá na Mão panel uses) ---- */
   --c-amber: #f59e0b;   /* Aguardando confirmação */
   --c-blue: #3b82f6;    /* Confirmado */
   --c-violet: #8b5cf6;  /* Em preparo (alt) */
